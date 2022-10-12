@@ -1,0 +1,9 @@
+{% for comment in comments %}
+<div class="card mt-4">
+    <div class="card-body">
+        <h3>{{ comment.user.username }}</h3>
+        <p>{{ comment.text }}</p>
+        <small>{{ comment.created_at }}</small>
+    </div>
+</div>
+{% endfor %}
